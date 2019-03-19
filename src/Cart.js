@@ -1,4 +1,5 @@
 import React from "react";
+import Product from "./Product.js";
 import "./styles/cart.css";
 
 class Cart extends React.Component {
@@ -6,7 +7,7 @@ class Cart extends React.Component {
   render() {
     return (
         <div className="page-content">
-            <h2>Add your products here!</h2>
+            <Product productName="Apple" price={2} limit={5}/>
         </div>
     );
   }
