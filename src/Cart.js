@@ -1,5 +1,6 @@
 import React from "react";
-import Product from "./Product.js";
+import Product from "./Product";
+import ProductData from "./Data"
 import "./styles/cart.css";
 
 class Cart extends React.Component {
@@ -7,7 +8,9 @@ class Cart extends React.Component {
   render() {
     return (
         <div className="page-content">
-            <Product productName="Apple" price={2} limit={5}/>
+            {ProductData.products.map(product => (
+            	<Product productName={product.name} price={product.cost} limit={product.stock} />
+            ))}
         </div>
     );
   }
