@@ -20,6 +20,16 @@ const ProductData = {
             cost: 5.0,
             stock: 0
         },
+        {
+            name: "Eggplant",
+            cost: 1.0,
+            stock: 45
+        },
+        {
+            name: "Pork",
+            cost: 10.0,
+            stock: 10
+        },
     ]
 }
 
